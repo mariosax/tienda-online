@@ -1,0 +1,74 @@
+// Variables de color (puedes personalizarlas)
+$primary-color: #007bff;
+$secondary-color: #28a745;
+$danger-color: #dc3545;
+$background-color: #f8f9fa;
+$text-color: #333;
+
+// Estilos globales
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+}
+
+// Contenedor principal
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Bloque home */
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+/* Elemento home__title dentro del bloque home */
+.home__title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Elemento home__description dentro del bloque home */
+.home__description {
+  font-size: 1.25rem;
+  color: #666;
+  margin-top: 0;
+}
+
+/* Modificadores (si los necesitaras) */
+/* Puedes agregar un modificador si deseas cambiar algo en un estado específico */
+.home--highlighted {
+  background-color: #e9ecef;
+}
+
+.main-content {
+  padding-top: 160px; /* Ajusta este valor a la altura del header */
+}
+.home-page__image {
+  width: 60%; /* Hace que la imagen ocupe el ancho completo */
+  max-width: 300px; /* Tamaño máximo de la imagen */
+  height: auto; /* Mantiene las proporciones */
+  margin: 20px auto; /* Centra la imagen vertical y horizontalmente */
+  display: block; /* Centra con margin auto */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+}
+.home-page {
+  padding-top: calc(60px + 10px); /* 60px es la altura del header, y 10px es el padding adicional */
+}
