@@ -1,0 +1,76 @@
+/* src/styles/ProductCard.css */
+
+/* Contenedor de las tarjetas */
+.product-card-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea las tarjetas a la derecha */
+    gap: 20px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Hace que las tarjetas se acomoden en nuevas filas si no caben */
+    padding: 20px;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Para que el padding no haga que el contenedor se desborde */
+  }
+  
+  /* Tarjeta de producto */
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Tamaño de cada tarjeta */
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Imagen del producto */
+  .product-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Nombre del producto */
+  .product-card__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  /* Descripción del producto */
+  .product-card__description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Precio del producto */
+  .product-card__price {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Botón de agregar al carrito */
+  .product-card__button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card__button:hover {
+    background-color: #0056b3;
+  }
+  

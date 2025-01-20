@@ -1,0 +1,8 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-end; /* Alinear los elementos a la derecha */
+    padding: 20px;
+  }
+  
