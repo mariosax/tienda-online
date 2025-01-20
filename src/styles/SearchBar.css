@@ -1,0 +1,30 @@
+/* Bloque search-bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+  
+  /* Elemento input dentro del bloque search-bar */
+  .search-bar__input {
+    width: 40%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Modificadores (si los necesitaras) */
+  /* Por ejemplo, para un estado activo o error, puedes agregar algo como: */
+  .search-bar__input--active {
+    border-color: #5f9ea0;
+  }
+  
+  .search-bar__input--error {
+    border-color: #ff6347;
+  }
+  

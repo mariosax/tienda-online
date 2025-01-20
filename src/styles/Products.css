@@ -1,0 +1,35 @@
+/* src/styles/Products.css */
+
+/* Bloque principal de productos */
+.products {
+    padding: 20px;
+  }
+  
+  /* Lista de productos dentro del bloque */
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  /* Estilos para el contenedor de las tarjetas de producto */
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+  }
+  
+  /* Si quieres que el título o precio dentro de la tarjeta tenga más estilo */
+  .product-card__name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .product-card__price {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
