@@ -1,17 +1,18 @@
-// src/components/SearchBar.jsx
 import React, { useState, useEffect } from 'react';
 import '../styles/SearchBar.css';
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
-  // Ejecuta la búsqueda cada vez que el query cambie
+  // Este useEffect se ejecuta cada vez que query cambia
   useEffect(() => {
-    onSearch(query);
-  }, [query, onSearch]);
+    console.log(`El usuario está buscando: ${query}`);
+    // Aquí podrías realizar más acciones, como registrar eventos, etc.
+  }, [query]); // Dependencia: se ejecutará cuando `query` cambie
 
   const handleInputChange = (e) => {
     setQuery(e.target.value);
+    onSearch(e.target.value);
   };
 
   return (
